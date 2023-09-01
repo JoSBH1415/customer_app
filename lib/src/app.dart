@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           fontFamily: 'NotoSansLao',
           useMaterial3: true,
         ),
-        home: SelectMarket(),
+        home: const SelectMarket(),
         debugShowCheckedModeBanner: false,
       ),
     );
