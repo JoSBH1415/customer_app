@@ -1,3 +1,4 @@
+import 'package:customer_app/src/select_market/widget/Language.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,6 +15,34 @@ AppBar buildAppBar() {
       "ເລືອກຕະຫຼາດ",
       style: TextStyle(color: Colors.black, fontSize: 24.sp),
     )),
+    actions: [
+      //   PopupMenuButton<Language>(
+      //     icon: Image.asset(
+      //       _selectedLanguage.image,
+      //       width: 30,
+      //       height: 30,
+      //     ),
+      //     onSelected: _toggleLanguage,
+      //     itemBuilder: (BuildContext context) {
+      //       return supportedLanguages.map((Language language) {
+      //         return PopupMenuItem<Language>(
+      //           value: language,
+      //           child: Row(
+      //             children: [
+      //               Image.asset(
+      //                 language.image,
+      //                 width: 30,
+      //                 height: 30,
+      //               ),
+      //               const SizedBox(width: 8),
+      //               Text(language.name),
+      //             ],
+      //           ),
+      //         );
+      //       }).toList();
+      //     },
+      //   ),
+    ],
   );
 }
 
@@ -38,7 +67,7 @@ Widget BoxSearch() {
       height: 40.h,
       width: 350.w,
       child: TextFormField(
-        decoration:
-            InputDecoration(hintText: 'ຄົ້ນຫາຕະຫຼາດ', border: InputBorder.none),
+        decoration: InputDecoration(
+            hintText: 'ຄົ້ນຫາຕະຫຼາດ......', border: InputBorder.none),
       ));
 }
