@@ -1,3 +1,4 @@
+import 'package:customer_app/src/select_market/widget/select_marke_widget.dart';
 import 'package:flutter/material.dart';
 
 class SelectMarket extends StatelessWidget {
@@ -6,8 +7,8 @@ class SelectMarket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("ຕະຫຼາດ")),
-      body: SafeArea(child: Text("Hi")),
+      appBar: buildAppBar(),
+      body: SafeArea(child: buildAllBody()),
     );
   }
 }
