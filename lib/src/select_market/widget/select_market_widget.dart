@@ -14,7 +14,7 @@ AppBar buildAppBar() {
       "ຕະຫຼາດ",
       style: TextStyle(color: Colors.black, fontSize: 24.sp),
     )),
-    // actions: const [],
+    actions: <Widget>[],
   );
 }
 
